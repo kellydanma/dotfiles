@@ -1,5 +1,6 @@
 [user]
 	name = Kelly Ma
+	email = kelly.ma@shopify.com
         useConfigOnly = true
 [github]
 	user = kellydanma
