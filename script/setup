@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# gpg setup
+gpgconf --launch dirmngr
+gpg --keyserver keys.openpgp.org --recv BBB9108B1005C2C00FF88FDB40B912A095A00E39
+
+# zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git ~/.oh-my-zsh/custom/themes/spaceship-prompt --depth=1
+ln -s ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+
+if [ $SPIN ]; then
+  DOTFILES=~/dotfiles
+else
+  DOTFILES=~/.dotfiles
+fi
+
+for i in $DOTFILES/conf/*; do
+  echo "Installing $(basename $i)..."
+  rm -rf ~/.$(basename $i)
+  ln -s $i ~/.$(basename $i)
+done
+
+zsh

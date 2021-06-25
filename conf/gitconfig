@@ -1,0 +1,45 @@
+[user]
+	name = Kelly Ma
+        useConfigOnly = true
+[github]
+	user = kellydanma
+[core]
+	excludesfile = ~/.gitignore
+	commitGraph = true
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	grep = always
+[alias]
+	a = commit --amend
+        branch = branch -v
+	cp = cherry-pick
+        h = reset HEAD *
+	rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+        remote = remote -v
+	rh = reset --hard
+	rs = reset --soft
+	cleanup = ! git branch --merged | grep -v \"*\" | xargs git branch -d
+[push]
+	default = current
+[pull]
+	rebase = false
+[diff]
+	algorithm = patience
+[protocol]
+	version = 2
+[gc]
+	writeCommitGraph = true
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+[url "https://github.com/Shopify/"]
+	insteadOf = git@github.com:Shopify/
+	insteadOf = git@github.com:shopify/
+	insteadOf = ssh://git@github.com/Shopify/
+	insteadOf = ssh://git@github.com/shopify/
