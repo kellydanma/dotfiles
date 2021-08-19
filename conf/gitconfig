@@ -30,6 +30,7 @@
 	default = current
 [pull]
 	rebase = false
+	ff = only
 [diff]
 	algorithm = patience
 [protocol]
