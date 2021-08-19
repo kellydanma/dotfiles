@@ -17,7 +17,7 @@
 	a = commit --amend
         branch = branch -v
 	cp = cherry-pick
-	fp = puch --force-with-lease
+	fp = push --force-with-lease
         h = reset HEAD *
 	rb = rebase
 	rba = rebase --abort
