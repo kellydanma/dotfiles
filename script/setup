@@ -2,8 +2,7 @@
 
 # gpg setup
 gpgconf --launch dirmngr
-gpg --keyserver keys.openpgp.org --recv 9FF3781A2C32998F78C3B66940BE9CB9EB3CBC54
-gpg-agent --daemon
+gpg --keyserver keys.openpgp.org --recv 41AF08ED872634EB27A728062DCB1FDB966C8F17
 
 # zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
