@@ -3,6 +3,7 @@
 # gpg setup
 gpgconf --launch dirmngr
 gpg --keyserver keys.openpgp.org --recv 41AF08ED872634EB27A728062DCB1FDB966C8F17
+export GPG_TTY=$(tty)
 
 # zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
