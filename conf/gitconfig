@@ -8,6 +8,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	commitGraph = true
+	editor = vim
 [color]
 	diff = auto
 	status = auto
