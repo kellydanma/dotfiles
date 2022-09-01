@@ -11,6 +11,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git ~/.oh-my-zsh/custom/themes/spaceship-prompt --depth=1
 ln -s ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+git clone https://github.com/mashaal/wild-cherry.git ~/.oh-my-zsh/custom/themes/wild-cherry --depth=1
+ln -s ~/.oh-my-zsh/custom/themes/wild-cherry/wild-cherry.zsh-theme ~/.oh-my-zsh/custom/themes/wild-cherry.zsh-theme
 
 if [ $SPIN ]; then
   DOTFILES=~/dotfiles
