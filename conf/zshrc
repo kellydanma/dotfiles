@@ -114,6 +114,7 @@ alias visual-studio-code='code'
 
 # shopify aliases
 alias unbork='bin/rails db:reset RAILS_ENV=test || bin/rails db:cpt_migrate lhm:run:all RAILS_ENV=test'
+alias update='dev stop && dev up && dev start'
 
 # asdf version manager
 # . $HOME/.asdf/asdf.sh
