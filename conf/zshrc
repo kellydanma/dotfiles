@@ -113,8 +113,9 @@ alias kelpy='cd ~/src/github.com/kellydanma'
 alias visual-studio-code='code'
 
 # shopify aliases
-alias unbork='bin/rails db:reset RAILS_ENV=test || bin/rails db:cpt_migrate lhm:run:all RAILS_ENV=test'
+alias unbork='dev cd shopify && bin/rails db:reset RAILS_ENV=test || bin/rails db:cpt_migrate lhm:run:all RAILS_ENV=test'
 alias update='dev stop && dev up && dev start'
+alias update-graphql='dev cd web && yarn refresh-graphql --definitions'
 
 # asdf version manager
 # . $HOME/.asdf/asdf.sh
