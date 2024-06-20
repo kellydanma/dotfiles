@@ -2,7 +2,7 @@
 	name = Kelly Ma
 	email = kelly.ma@shopify.com
         useConfigOnly = true
-	signingkey = A4E2F09DDEDCB25A1F3A65B5D7C58A298DBAB710
+	signingkey = 6A72FC99E7A3AFD3E3CABB5E185962306B5148FC
 [github]
 	user = kellydanma
 [core]
