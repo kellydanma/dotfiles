@@ -138,3 +138,7 @@ if [ -f '/Users/kellyma/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kellyma
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kellyma/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kellyma/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Git aliases
+alias gitlogs='git log --graph --pretty=format:'\''%C(auto)%h%d %s %C(green)(%cr) %C(cyan)[%an]%C(reset)'\'
+alias cb='git rev-parse --abbrev-ref HEAD'
